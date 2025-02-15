@@ -1,0 +1,26 @@
+hp@ahmed78 MINGW64 ~/Downloads/GO DATA SCIENCE 4.0/src (main)
+$ python "C:/Users/hp/Downloads/GO DATA SCIENCE 4.0/src/train.py"
+
+Sample of predictions:
+      ID      Target
+0   3639     anxiety
+1  21493     anxiety
+2  21215  depression
+3  13466  depression
+4  14084     anxiety
+
+Validation Accuracy: 0.7524
+(env) 
+hp@ahmed78 MINGW64 ~/Downloads/GO DATA SCIENCE 4.0/src (main)
+$ python "C:/Users/hp/Downloads/GO DATA SCIENCE 4.0/src/train.py"
+
+Sample of predictions:
+      ID      Target
+0   3639     anxiety
+1  21493     anxiety
+2  21215  depression
+3  13466  depression
+4  14084     anxiety
+
+Validation Accuracy: 0.7588
+
