@@ -24,3 +24,89 @@ Sample of predictions:
 
 Validation Accuracy: 0.7588
 
+(env) 
+hp@ahmed78 MINGW64 ~/Downloads/GO DATA SCIENCE 4.0/src (main)
+$ python "C:/Users/hp/Downloads/GO DATA SCIENCE 4.0/src/train.py"
+Preprocessing data...
+
+Performing cross-validation...
+
+Cross-validation scores: [0.74600639 0.76403469 0.75467823 0.76038339 0.74937229]
+Mean CV score: 0.7549 (+/- 0.0134)
+
+Training final model...
+Making predictions...
+
+Submission saved to submission_improved.csv
+
+Class distribution in predictions:
+relationship-and-family-issues     0.300162
+anxiety                            0.270106
+depression                         0.257920
+ptsd-and-trauma                    0.089358
+suicidal-thoughts-and-self-harm    0.082453
+Name: proportion, dtype: float64
+
+Sample predictions with confidence scores:
+ID: 3639, Prediction: anxiety, Confidence: 34.10%
+ID: 21493, Prediction: anxiety, Confidence: 39.75%
+ID: 21215, Prediction: depression, Confidence: 67.21%
+ID: 13466, Prediction: depression, Confidence: 52.81%
+ID: 14084, Prediction: anxiety, Confidence: 70.90%
+
+
+(env) 
+hp@ahmed78 MINGW64 ~/Downloads/GO DATA SCIENCE 4.0/src (main)
+$ python "C:/Users/hp/Downloads/GO DATA SCIENCE 4.0/src/train.py"
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\hp\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\hp\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt_tab to
+[nltk_data]     C:\Users\hp\AppData\Roaming\nltk_data...
+[nltk_data]   Unzipping tokenizers\punkt_tab.zip.
+Loading data...
+Preprocessing data...
+
+Performing cross-validation...
+
+Cross-validation scores: [0.72136011 0.72797809 0.71656778 0.7284345  0.71878567]
+Mean CV score: 0.7226 (+/- 0.0096)
+
+Training final model...
+Making predictions...
+
+Submission saved to submission_robust.csv
+
+Class distribution comparison:
+
+Training data distribution:
+target
+relationship-and-family-issues     0.301976
+anxiety                            0.300790
+depression                         0.263271
+ptsd-and-trauma                    0.082158
+suicidal-thoughts-and-self-harm    0.051805
+Name: proportion, dtype: float64
+
+Prediction distribution:
+relationship-and-family-issues     0.334281
+anxiety                            0.284728
+depression                         0.272136
+ptsd-and-trauma                    0.070674
+suicidal-thoughts-and-self-harm    0.038180
+Name: proportion, dtype: float64
+
+Top 10 most important terms:
+1. anxiety (0.037725)
+2. ptsd (0.024821)
+3. relationship (0.017420)
+4. depression (0.015841)
+5. trauma (0.014765)
+6. suicidal (0.010567)
+7. panic (0.009856)
+8. together (0.009345)
+9. abuse (0.008483)
+10. suicide (0.008080)
